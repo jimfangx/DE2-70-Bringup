@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Program Files\Intel\Quartus II\Altera
+vBasicTests
+Z1 Igj8CDS^]4;<>5Sn2WoWcH1
+Z2 Vk=CANG4j`c>fAVobRj<`60
+Z3 dD:\Projects\DE2-70-Bringup\DE2_70_Basic_Tests
+Z4 w1718505973
+Z5 8D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/BasicTests.v
+Z6 FD:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/BasicTests.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@basic@tests
+Z10 !s100 PW6fNAKVjR2?Mam4WJ0Ti2
+Z11 !s108 1718505973.922000
+Z12 !s107 D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/BasicTests.v|
+Z13 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/BasicTests.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_BasicTests
+!i10b 1
+!s100 51oGnf9OXMG8gQZg=@Ef22
+IdgPml=Q2C?FdFSQToz>Gn1
+Z14 V3@mB9XLnKhTfeO57:n1MO3
+R3
+w1718508578
+Z15 8D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/tb_BasicTests.v
+Z16 FD:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/tb_BasicTests.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1718508629.444000
+!s107 D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/tb_BasicTests.v|
+Z17 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/tb_BasicTests.v|
+!s101 -O0
+R8
+Z18 ntb_@basic@tests

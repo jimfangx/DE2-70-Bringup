@@ -1,0 +1,8 @@
+D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/BasicTests.v {1 {vlog -work work D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/BasicTests.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module BasicTests
+
+Top level modules:
+	BasicTests
+
+} {} {}}

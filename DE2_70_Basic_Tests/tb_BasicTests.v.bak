@@ -1,0 +1,16 @@
+`timescale 10us/100ns
+module tb_BasicTests ();
+
+reg [17:0] iSW;
+wire [17:0] output_oLEDR;
+
+// init DUT
+BasicTests instance1(iSW, output_oLEDR);
+
+initial begin
+    iSW = 18'b1111111111111111;
+    #10
+    iSW = 18'b0000000000000000;
+end
+
+endmodule
