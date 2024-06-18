@@ -5,4 +5,11 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	BasicTests
 
+} {} {}} D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/tb_BasicTests.v {1 {vlog -work work D:/Projects/DE2-70-Bringup/DE2_70_Basic_Tests/tb_BasicTests.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_BasicTests
+
+Top level modules:
+	tb_BasicTests
+
 } {} {}}
