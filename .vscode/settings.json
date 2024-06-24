@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.gs": "javascript",
+        "*.html": "html",
+        "*.jsx": "javascript",
+        "*.h": "c",
+        "DM9000A.C": "cpp",
+        "DM9000A.H": "cpp"
+    }
+}

@@ -1,0 +1,13 @@
+!SESSION 2024-06-19 04:09:30.958 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-06-19 04:13:45.137
+!MESSAGE Indexed 'DE2_70_Ethernet_bsp' (221 sources, 125 headers) in 2.91 sec: 8,883 declarations; 44,108 references; 168 unresolved inclusions; 9 syntax errors; 497 unresolved names (0.93%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-06-19 04:13:49.826
+!MESSAGE Indexed 'DE2_70_Ethernet' (5 sources, 16 headers) in 0.06 sec: 338 declarations; 1,801 references; 66 unresolved inclusions; 3 syntax errors; 189 unresolved names (8.12%)

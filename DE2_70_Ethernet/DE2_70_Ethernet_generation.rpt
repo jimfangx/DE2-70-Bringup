@@ -1,0 +1,218 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/ --output-directory=D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet/ --report-file=bsf:D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C70F896C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet.qsys
+Progress: Loading DE2_70_Ethernet/DE2_70_Ethernet.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding eth_tse_0 [altera_eth_tse 13.0]
+Progress: Parameterizing module eth_tse_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding altpll_0 [altpll 13.0]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2_70_Ethernet.eth_tse_0: To transition your existing Triple-Speed Ethernet (TSE) design to this new version of the user interface, refer to TSE user guide.
+Altera recommends using this new TSE user interface for all new TSE designs.
+Info: DE2_70_Ethernet.eth_tse_0.receive/eth_tse_0.transmit: The source has a ready latency of 2, while the sink has 0. Avalon Streaming Transform will be executed.
+Info: DE2_70_Ethernet.eth_tse_0.receive/eth_tse_0.transmit: The width of the error signal from the source is 6 bits, but is 1 bits to the sink. Avalon Streaming Transform will be executed.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_status_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_gmii_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_mii_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_misc_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.lcd_16207_0: lcd_16207_0.external must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.jtag_uart_0: Interrupt sender jtag_uart_0.irq is not connected to an interrupt receiver
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/ --output-directory=D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet.sopcinfo --report-file=html:D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet.html --report-file=qip:D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet/synthesis/DE2_70_Ethernet.qip --report-file=cmp:D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C70F896C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet.qsys --language=VERILOG
+Progress: Loading DE2_70_Ethernet/DE2_70_Ethernet.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding eth_tse_0 [altera_eth_tse 13.0]
+Progress: Parameterizing module eth_tse_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding altpll_0 [altpll 13.0]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2_70_Ethernet.eth_tse_0: To transition your existing Triple-Speed Ethernet (TSE) design to this new version of the user interface, refer to TSE user guide.
+Altera recommends using this new TSE user interface for all new TSE designs.
+Info: DE2_70_Ethernet.eth_tse_0.receive/eth_tse_0.transmit: The source has a ready latency of 2, while the sink has 0. Avalon Streaming Transform will be executed.
+Info: DE2_70_Ethernet.eth_tse_0.receive/eth_tse_0.transmit: The width of the error signal from the source is 6 bits, but is 1 bits to the sink. Avalon Streaming Transform will be executed.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_status_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_gmii_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_mii_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.eth_tse_0: eth_tse_0.mac_misc_connection must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.lcd_16207_0: lcd_16207_0.external must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: DE2_70_Ethernet.jtag_uart_0: Interrupt sender jtag_uart_0.irq is not connected to an interrupt receiver
+Info: DE2_70_Ethernet: Generating DE2_70_Ethernet "DE2_70_Ethernet" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 7 modules, 26 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 15 modules, 50 connections
+Info: merlin_domain_transform: After transform: 30 modules, 128 connections
+Info: merlin_router_transform: After transform: 38 modules, 152 connections
+Info: merlin_traffic_limiter_transform: After transform: 40 modules, 160 connections
+Info: reset_adaptation_transform: After transform: 41 modules, 162 connections
+Info: merlin_network_to_switch_transform: After transform: 56 modules, 194 connections
+Info: limiter_update_transform: After transform: 56 modules, 196 connections
+Info: merlin_mm_transform: After transform: 56 modules, 196 connections
+Info: merlin_interrupt_mapper_transform: After transform: 57 modules, 199 connections
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: com_altera_sopcmodel_transforms_avalonst_AvalonStreamingTransform: After transform: 58 modules, 202 connections
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_70_Ethernet: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys_0: Starting RTL generation for module 'DE2_70_Ethernet_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe} -I {D:/program files/intel/quartus ii/altera/quartus/common/ip/altera/common/perl/5.8.3} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/europa} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/perl_lib} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/nios2_ip/altera_nios2} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/nios2_ip/altera_nios2} -- {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl} --name=DE2_70_Ethernet_nios2_qsys_0 --dir=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0001_nios2_qsys_0_gen/ {--quartus_dir=D:/program files/intel/quartus ii/altera/quartus} --verilog --config=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0001_nios2_qsys_0_gen//DE2_70_Ethernet_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2024.06.19 04:04:04 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2024.06.19 04:04:04 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2024.06.19 04:04:04 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2024.06.19 04:04:04 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)     Testbench
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)     Instruction decoding
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)       Instruction fields
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)       Instruction decodes
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)       Instruction controls
+Info: nios2_qsys_0: # 2024.06.19 04:04:05 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2024.06.19 04:04:06 (*)     Pipeline backend
+Info: nios2_qsys_0: # 2024.06.19 04:04:07 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2024.06.19 04:04:09 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2024.06.19 04:04:10 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'DE2_70_Ethernet_nios2_qsys_0'
+Info: nios2_qsys_0: "DE2_70_Ethernet" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'DE2_70_Ethernet_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec {D:/program files/intel/quartus ii/altera/quartus/bin/perl/bin/perl.exe} -I {D:/program files/intel/quartus ii/altera/quartus/common/ip/altera/common/perl/5.8.3} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/europa} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/perl_lib} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/common} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2} -- {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl} --name=DE2_70_Ethernet_onchip_memory2_0 --dir=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0002_onchip_memory2_0_gen/ {--quartus_dir=D:/program files/intel/quartus ii/altera/quartus} --verilog --config=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0002_onchip_memory2_0_gen//DE2_70_Ethernet_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'DE2_70_Ethernet_onchip_memory2_0'
+Info: onchip_memory2_0: "DE2_70_Ethernet" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'DE2_70_Ethernet_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec {D:/program files/intel/quartus ii/altera/quartus/bin/perl/bin/perl.exe} -I {D:/program files/intel/quartus ii/altera/quartus/common/ip/altera/common/perl/5.8.3} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/europa} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/perl_lib} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/common} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart} -- {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl} --name=DE2_70_Ethernet_jtag_uart_0 --dir=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0003_jtag_uart_0_gen/ {--quartus_dir=D:/program files/intel/quartus ii/altera/quartus} --verilog --config=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0003_jtag_uart_0_gen//DE2_70_Ethernet_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'DE2_70_Ethernet_jtag_uart_0'
+Info: jtag_uart_0: "DE2_70_Ethernet" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: pipeline_bridge_swap_transform: After transform: 1 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: No Avalon connections, skipping transform 
+Info: merlin_translator_transform: After transform: 1 modules, 0 connections
+Info: eth_tse_0: "DE2_70_Ethernet" instantiated altera_eth_tse "eth_tse_0"
+Info: lcd_16207_0: Starting RTL generation for module 'DE2_70_Ethernet_lcd_16207_0'
+Info: lcd_16207_0:   Generation command is [exec {D:/program files/intel/quartus ii/altera/quartus/bin/perl/bin/perl.exe} -I {D:/program files/intel/quartus ii/altera/quartus/common/ip/altera/common/perl/5.8.3} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/europa} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin/perl_lib} -I {D:/program files/intel/quartus ii/altera/quartus/sopc_builder/bin} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/common} -I {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207} -- {D:/program files/intel/quartus ii/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207/generate_rtl.pl} --name=DE2_70_Ethernet_lcd_16207_0 --dir=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0004_lcd_16207_0_gen/ {--quartus_dir=D:/program files/intel/quartus ii/altera/quartus} --verilog --config=C:/Users/JIMFAN~1/AppData/Local/Temp/alt9893_2586918586523259500.dir/0004_lcd_16207_0_gen//DE2_70_Ethernet_lcd_16207_0_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd_16207_0: Done RTL generation for module 'DE2_70_Ethernet_lcd_16207_0'
+Info: lcd_16207_0: "DE2_70_Ethernet" instantiated altera_avalon_lcd_16207 "lcd_16207_0"
+Info: altpll_0: "DE2_70_Ethernet" instantiated altpll "altpll_0"
+Info: nios2_qsys_0_instruction_master_translator: "DE2_70_Ethernet" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "DE2_70_Ethernet" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "DE2_70_Ethernet" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "DE2_70_Ethernet" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "DE2_70_Ethernet" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "DE2_70_Ethernet" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "DE2_70_Ethernet" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "DE2_70_Ethernet" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "DE2_70_Ethernet" instantiated altera_merlin_router "id_router_002"
+Info: limiter: "DE2_70_Ethernet" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "DE2_70_Ethernet" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "DE2_70_Ethernet" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "DE2_70_Ethernet" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "DE2_70_Ethernet" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "DE2_70_Ethernet" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "DE2_70_Ethernet" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "DE2_70_Ethernet" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "DE2_70_Ethernet" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/Projects/DE2-70-Bringup/DE2_70_Ethernet/DE2_70_Ethernet/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "DE2_70_Ethernet" instantiated altera_irq_mapper "irq_mapper"
+Info: pipeline_bridge_swap_transform: After transform: 4 modules, 6 connections
+Info: No custom instruction connections, skipping transform 
+Info: No Avalon connections, skipping transform 
+Info: merlin_translator_transform: After transform: 4 modules, 6 connections
+Info: avalon_st_adapter: "DE2_70_Ethernet" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: i_tse_mac: "eth_tse_0" instantiated altera_eth_tse_mac "i_tse_mac"
+Info: error_adapter_0: Starting generation. 
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: timing_adapter_0: Starting generation. 
+Info: timing_adapter_0_fifo: Starting generation. 
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: DE2_70_Ethernet: Done DE2_70_Ethernet" with 30 modules, 176 files, 6455407 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

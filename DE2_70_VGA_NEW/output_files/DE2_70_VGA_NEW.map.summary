@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun 24 04:42:31 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : DE2_70_VGA_NEW
+Top-level Entity Name : VGA_Draw
+Family : Cyclone II
+Total logic elements : 117
+    Total combinational functions : 106
+    Dedicated logic registers : 75
+Total registers : 75
+Total pins : 37
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

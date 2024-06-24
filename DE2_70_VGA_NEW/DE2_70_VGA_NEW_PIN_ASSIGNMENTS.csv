@@ -1,0 +1,58 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# File: D:\Projects\DE2-70-Bringup\DE2_70_VGA_NEW\DE2_70_VGA_NEW_PIN_ASSIGNMENTS.csv
+# Generated on: Mon Jun 24 04:43:06 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Differential Pair
+iCLK_28,Input,PIN_E16,4,B4_N3,PIN_E16,,,,
+iCLK_50,Input,PIN_AD15,7,B7_N3,PIN_AD15,,,,
+oVGA_B[9],Output,PIN_D19,4,B4_N2,PIN_D19,,,,
+oVGA_B[8],Output,PIN_C19,4,B4_N2,PIN_C19,,,,
+oVGA_B[7],Output,PIN_A19,4,B4_N2,PIN_A19,,,,
+oVGA_B[6],Output,PIN_B19,4,B4_N2,PIN_B19,,,,
+oVGA_B[5],Output,PIN_B18,4,B4_N2,PIN_B18,,,,
+oVGA_B[4],Output,PIN_C18,4,B4_N2,PIN_C18,,,,
+oVGA_B[3],Output,PIN_B17,4,B4_N3,PIN_B17,,,,
+oVGA_B[2],Output,PIN_A17,4,B4_N3,PIN_A17,,,,
+oVGA_B[1],Output,PIN_C16,4,B4_N3,PIN_C16,,,,
+oVGA_B[0],Output,PIN_B16,4,B4_N3,PIN_B16,,,,
+oVGA_BLANK_N,Output,PIN_C15,3,B3_N0,PIN_C15,,,,
+oVGA_CLOCK,Output,PIN_D24,4,B4_N0,PIN_D24,,,,
+oVGA_G[9],Output,PIN_A14,3,B3_N0,PIN_A14,,,,
+oVGA_G[8],Output,PIN_B14,3,B3_N0,PIN_B14,,,,
+oVGA_G[7],Output,PIN_B13,3,B3_N0,PIN_B13,,,,
+oVGA_G[6],Output,PIN_C13,3,B3_N0,PIN_C13,,,,
+oVGA_G[5],Output,PIN_A12,3,B3_N0,PIN_A12,,,,
+oVGA_G[4],Output,PIN_B12,3,B3_N0,PIN_B12,,,,
+oVGA_G[3],Output,PIN_C12,3,B3_N1,PIN_C12,,,,
+oVGA_G[2],Output,PIN_A11,3,B3_N1,PIN_A11,,,,
+oVGA_G[1],Output,PIN_B11,3,B3_N1,PIN_B11,,,,
+oVGA_G[0],Output,PIN_A10,3,B3_N1,PIN_A10,,,,
+oVGA_HS,Output,PIN_J19,4,B4_N1,PIN_J19,,,,
+oVGA_R[9],Output,PIN_G20,4,B4_N1,PIN_G20,,,,
+oVGA_R[8],Output,PIN_E20,4,B4_N2,PIN_E20,,,,
+oVGA_R[7],Output,PIN_F20,4,B4_N2,PIN_F20,,,,
+oVGA_R[6],Output,PIN_H20,4,B4_N1,PIN_H20,,,,
+oVGA_R[5],Output,PIN_G21,4,B4_N0,PIN_G21,,,,
+oVGA_R[4],Output,PIN_H21,4,B4_N0,PIN_H21,,,,
+oVGA_R[3],Output,PIN_D22,4,B4_N1,PIN_D22,,,,
+oVGA_R[2],Output,PIN_E22,4,B4_N0,PIN_E22,,,,
+oVGA_R[1],Output,PIN_E23,4,B4_N0,PIN_E23,,,,
+oVGA_R[0],Output,PIN_D23,4,B4_N1,PIN_D23,,,,
+oVGA_SYNC_N,Output,PIN_B15,3,B3_N0,PIN_B15,,,,
+oVGA_VS,Output,PIN_H19,4,B4_N1,PIN_H19,,,,

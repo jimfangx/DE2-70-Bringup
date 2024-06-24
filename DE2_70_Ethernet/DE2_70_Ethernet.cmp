@@ -1,0 +1,6 @@
+	component DE2_70_Ethernet is
+		port (
+			clk_clk : in std_logic := 'X'  -- clk
+		);
+	end component DE2_70_Ethernet;
+

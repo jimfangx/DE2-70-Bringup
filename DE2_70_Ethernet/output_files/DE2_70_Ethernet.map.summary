@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jun 19 04:08:18 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : DE2_70_Ethernet
+Top-level Entity Name : DE2_70_Ethernet
+Family : Cyclone II
+Total logic elements : 7,455
+    Total combinational functions : 5,943
+    Dedicated logic registers : 3,989
+Total registers : 3989
+Total pins : 1
+Total virtual pins : 0
+Total memory bits : 4,314,576
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 1

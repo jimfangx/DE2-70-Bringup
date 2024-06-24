@@ -1,0 +1,210 @@
+Flow report for DE2_70_Ethernet
+Wed Jun 19 04:08:19 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Successful - Wed Jun 19 04:08:18 2024            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; DE2_70_Ethernet                                  ;
+; Top-level Entity Name              ; DE2_70_Ethernet                                  ;
+; Family                             ; Cyclone II                                       ;
+; Device                             ; EP2C70F896C6                                     ;
+; Timing Models                      ; Final                                            ;
+; Total logic elements               ; 7,455                                            ;
+;     Total combinational functions  ; 5,943                                            ;
+;     Dedicated logic registers      ; 3,989                                            ;
+; Total registers                    ; 3989                                             ;
+; Total pins                         ; 1                                                ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 4,314,576                                        ;
+; Embedded Multiplier 9-bit elements ; 4                                                ;
+; Total PLLs                         ; 1                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/19/2024 04:07:27 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DE2_70_Ethernet     ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                              ;
++-------------------------------------+-------------------------------------------------------------------+---------------+----------------------------------------------------+----------------+
+; Assignment Name                     ; Value                                                             ; Default Value ; Entity Name                                        ; Section Id     ;
++-------------------------------------+-------------------------------------------------------------------+---------------+----------------------------------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 30902517252148.171879524710072                                    ; --            ; --                                                 ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                       ; --            ; --                                                 ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                         ; <None>        ; --                                                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; --                                                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_addr_router                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_addr_router_001                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_altpll_0                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_avalon_st_adapter                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_avalon_st_adapter_error_adapter_0  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_avalon_st_adapter_timing_adapter_0 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_cmd_xbar_demux                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_cmd_xbar_demux_001                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_cmd_xbar_mux                       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_eth_tse_0                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_id_router                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_id_router_002                      ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_irq_mapper                         ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_jtag_uart_0                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_lcd_16207_0                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_nios2_qsys_0                       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_onchip_memory2_0                   ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_demux                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_demux_002                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_mux                       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_mux_001                   ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_avalon_sc_fifo                              ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_eth_tse_mac                                 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_merlin_master_agent                         ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_merlin_master_translator                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_merlin_slave_agent                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_merlin_slave_translator                     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_merlin_traffic_limiter                      ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                              ; --            ; altera_reset_controller                            ; --             ;
+; IP_TOOL_NAME                        ; Qsys                                                              ; --            ; --                                                 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                              ; --            ; DE2_70_Ethernet_addr_router                        ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                              ; --            ; DE2_70_Ethernet_addr_router_001                    ; --             ;
+; IP_TOOL_NAME                        ; altpll                                                            ; --            ; DE2_70_Ethernet_altpll_0                           ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_st_adapter                                          ; --            ; DE2_70_Ethernet_avalon_st_adapter                  ; --             ;
+; IP_TOOL_NAME                        ; error_adapter                                                     ; --            ; DE2_70_Ethernet_avalon_st_adapter_error_adapter_0  ; --             ;
+; IP_TOOL_NAME                        ; timing_adapter                                                    ; --            ; DE2_70_Ethernet_avalon_st_adapter_timing_adapter_0 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                       ; --            ; DE2_70_Ethernet_cmd_xbar_demux                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                       ; --            ; DE2_70_Ethernet_cmd_xbar_demux_001                 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                         ; --            ; DE2_70_Ethernet_cmd_xbar_mux                       ; --             ;
+; IP_TOOL_NAME                        ; altera_eth_tse                                                    ; --            ; DE2_70_Ethernet_eth_tse_0                          ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                              ; --            ; DE2_70_Ethernet_id_router                          ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                              ; --            ; DE2_70_Ethernet_id_router_002                      ; --             ;
+; IP_TOOL_NAME                        ; altera_irq_mapper                                                 ; --            ; DE2_70_Ethernet_irq_mapper                         ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_jtag_uart                                           ; --            ; DE2_70_Ethernet_jtag_uart_0                        ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_lcd_16207                                           ; --            ; DE2_70_Ethernet_lcd_16207_0                        ; --             ;
+; IP_TOOL_NAME                        ; altera_nios2_qsys                                                 ; --            ; DE2_70_Ethernet_nios2_qsys_0                       ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                                      ; --            ; DE2_70_Ethernet_onchip_memory2_0                   ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                       ; --            ; DE2_70_Ethernet_rsp_xbar_demux                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                       ; --            ; DE2_70_Ethernet_rsp_xbar_demux_002                 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                         ; --            ; DE2_70_Ethernet_rsp_xbar_mux                       ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                         ; --            ; DE2_70_Ethernet_rsp_xbar_mux_001                   ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_sc_fifo                                             ; --            ; altera_avalon_sc_fifo                              ; --             ;
+; IP_TOOL_NAME                        ; altera_eth_tse_mac                                                ; --            ; altera_eth_tse_mac                                 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_master_agent                                        ; --            ; altera_merlin_master_agent                         ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_master_translator                                   ; --            ; altera_merlin_master_translator                    ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_agent                                         ; --            ; altera_merlin_slave_agent                          ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_translator                                    ; --            ; altera_merlin_slave_translator                     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_traffic_limiter                                     ; --            ; altera_merlin_traffic_limiter                      ; --             ;
+; IP_TOOL_NAME                        ; altera_reset_controller                                           ; --            ; altera_reset_controller                            ; --             ;
+; IP_TOOL_VERSION                     ; 13.0sp1                                                           ; --            ; --                                                 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_addr_router                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_addr_router_001                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_altpll_0                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_avalon_st_adapter                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_avalon_st_adapter_error_adapter_0  ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_avalon_st_adapter_timing_adapter_0 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_cmd_xbar_demux                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_cmd_xbar_demux_001                 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_cmd_xbar_mux                       ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_eth_tse_0                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_id_router                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_id_router_002                      ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_irq_mapper                         ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                       ; --            ; DE2_70_Ethernet_jtag_uart_0                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                       ; --            ; DE2_70_Ethernet_lcd_16207_0                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_nios2_qsys_0                       ; --             ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                       ; --            ; DE2_70_Ethernet_onchip_memory2_0                   ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_demux                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_demux_002                 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_mux                       ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; DE2_70_Ethernet_rsp_xbar_mux_001                   ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_avalon_sc_fifo                              ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_eth_tse_mac                                 ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_merlin_master_agent                         ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_merlin_master_translator                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_merlin_slave_agent                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_merlin_slave_translator                     ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_merlin_traffic_limiter                      ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                              ; --            ; altera_reset_controller                            ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                ; --            ; --                                                 ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                 ; --            ; --                                                 ; --             ;
+; MISC_FILE                           ; DE2_70_Ethernet/synthesis/../../DE2_70_Ethernet.cmp               ; --            ; --                                                 ; --             ;
+; MISC_FILE                           ; DE2_70_Ethernet/synthesis/../../DE2_70_Ethernet.qsys              ; --            ; --                                                 ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                          ; --            ; --                                                 ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                             ; --            ; --                                                 ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                            ; --            ; --                                                 ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                      ; --            ; --                                                 ; --             ;
+; SLD_INFO                            ; QSYS_NAME DE2_70_Ethernet HAS_SOPCINFO 1 GENERATION_ID 1718795037 ; --            ; --                                                 ; --             ;
+; SOPCINFO_FILE                       ; DE2_70_Ethernet/synthesis/../../DE2_70_Ethernet.sopcinfo          ; --            ; --                                                 ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                ; --            ; --                                                 ; --             ;
++-------------------------------------+-------------------------------------------------------------------+---------------+----------------------------------------------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:48     ; 1.0                     ; 4854 MB             ; 00:00:42                           ;
+; Total                ; 00:00:48     ; --                      ; --                  ; 00:00:42                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; Desktop          ; Windows 7 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DE2_70_Ethernet -c DE2_70_Ethernet
+
+
+
