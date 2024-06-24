@@ -7,7 +7,7 @@ module VGA_Controller (
 	oCurrent_X,
 	oCurrent_Y,
 
-	//	VGA Side to ADV7123
+	// VGA Side to ADV7123
 	oVGA_R,
 	oVGA_G,
 	oVGA_B,
@@ -17,7 +17,7 @@ module VGA_Controller (
 	oVGA_BLANK,
 	oVGA_CLOCK,
 
-	//	Control Signal
+	// Control Signal
 	iCLK,
 	iRST_N
 );
@@ -40,7 +40,7 @@ output oVGA_SYNC;
 output reg oVGA_BLANK;
 output oVGA_CLOCK;
 
-//	Control Signals
+// Control Signals
 input iCLK;
 input iRST_N;
 
@@ -88,7 +88,7 @@ always @(*) begin
     end
 end
 
-//	calculate current x, y position 
+// calculate current x, y position 
 always@(posedge iCLK or negedge iRST_N)
 begin
 	if(!iRST_N)

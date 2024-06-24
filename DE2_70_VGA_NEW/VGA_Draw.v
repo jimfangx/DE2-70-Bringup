@@ -49,7 +49,7 @@ VGA_Controller controller (
 	.oCurrent_X(oCurrent_X),
 	.oCurrent_Y(oCurrent_Y),
 
-	//	To ADV7123
+	// To ADV7123
 	.oVGA_R(oVGA_R),
 	.oVGA_G(oVGA_G),
 	.oVGA_B(oVGA_B),
@@ -59,7 +59,7 @@ VGA_Controller controller (
 	.oVGA_BLANK(oVGA_BLANK_N),
 	.oVGA_CLOCK(oVGA_CLOCK),
 
-	//	Control Signals
+	// Control Signals
 	.iCLK(iVGA_25_CLOCK),
 	.iRST_N(iRST_N)
 );
@@ -90,7 +90,7 @@ end
 // paint when not in blanking interval
 always @(*) begin
     iVGA_R = (oVGA_BLANK_N) ? paint_r : 10'h0;
-    iVGA_G = (oVGA_BLANK_N) ? paint_g : 10'h0;
+	iVGA_G = (oVGA_BLANK_N) ? paint_g : 10'h0;
 	iVGA_B = (oVGA_BLANK_N) ? paint_b : 10'h0;
 end
 
