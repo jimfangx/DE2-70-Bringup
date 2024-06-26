@@ -16,7 +16,7 @@ Blacking is supposed to be on during front & back porches: https://electronics.s
 General guidance from Project F: https://projectf.io/posts/fpga-graphics/
 
 Data sheet for the ADV7123 Triple 10-Bit High Speed Video DAC used by the DE2-70 dev board: https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7123.pdf (see pg. 10)
-    * This will help with implementing some specifics for the board: what blank should be, what sync should be, etc.
+* This will help with implementing some specifics for the board: what blank should be, what sync should be, etc.
 
 ### Implementing a Clock Divider
 This slide from George Mason University's ECE 448 outlined the general block diagram for implementing VGA with a mod-2 clock divider: https://people-ece.vse.gmu.edu/coursewebpages/ECE/ECE448/S18/viewgraphs/ECE448_lecture10_VGA_1.pdf
