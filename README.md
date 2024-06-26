@@ -1,5 +1,9 @@
 # DE2-70-Bringup
-A collection of programs that brings up different elements of the Altera DE2-70 FPGA.
+A collection of programs that brings up different elements of the terasIC DE2-70 development board.
+
+Projects in this repository are initalized for the Altera Cyclone II `EP2C70F896C6N` FPGA.
+
+<img src="./assets/VGA_Controller.jpg" width=400>
 
 ## Guide to programming
 ### Quartus II setup
@@ -30,6 +34,8 @@ The original executable is in the `DE2_70_ControlPanel_V1.6.0.zip`. Feel free to
 
 If you come across a `Load DLL (TERASIC_JTAG_DRIVE.dll) fail` error or a `Fail to connect to FPGA board` error, [this](https://community.intel.com/t5/Intel-FPGA-University-Program/control-panel-for-DE2-70/m-p/23816) post may be of use.
 
+If you get a `Execute(<MyPath>\NiosDownloadBatch.bat) fail. ExitCode:1h` err, [this](https://community.intel.com/t5/Intel-FPGA-University-Program/DE2-70-Exit-Code-1h/td-p/65563?profile.language=es&countrylabel=Mexico) might help.
+
 ### Pin Plan Errors:
 * If you get a `Can't place multiple pins assigned to pin location Pin_AD25` during your first time in Pin Planner, see: https://community.intel.com/t5/Programmable-Devices/error-with-pin-assignment/td-p/23523
 
@@ -50,6 +56,11 @@ If you come across a `Load DLL (TERASIC_JTAG_DRIVE.dll) fail` error or a `Fail t
 
 `DE2_70_VIDEO_V1.2.0.zip` - A video (and possibly camera) demo written by terasIC that originally shipped with the board on a CD.
 
+## Simulation
+Simulations in this repo are run on ModelSim Altera Starter Edition, which is included when downloading Quartus II.
+* ModelSim User Manual [here](https://faculty-web.msoe.edu/johnsontimoj/Common/FILES/modelsim_user.pdf)
+    * The Verilog states on pg. 303 is particularly helpful.
+
 ## Some additional information
 ### VGA Controller Notes
 Notes and resources I used for writing the VGA controller can be found in [VGA_Controller.md](VGA_Controller.md).
@@ -68,3 +79,7 @@ Before the ML505 board, they were using a (custom designed?) board by Xilinx cal
 So I am not exactly sure what/when these boards were used. Berkeley is enrolled in the [terasIC university program](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=329) however the course listed is a physics course and the board used is the DE2-115, not the DE2-70.
 
 I got access to these boards via [Berkeley IEEE](https://ieee.berkeley.edu/) and I was able to take one for the summer and experiment with it.
+
+### Other resources
+A video on getting started with Quartus II (setting up projects, compilation, pin planning, etc.): [here](https://www.youtube.com/watch?v=uPuui9ZhZk8).
+* [Here's](https://www.youtube.com/watch?v=oAS8UTtZ3_w&list=PLMonDzz7J8Sk8RD3lap1iBZI3leIPk7wF&index=8) another one that is a bit more clear
