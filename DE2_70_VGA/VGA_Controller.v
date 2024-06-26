@@ -1,98 +1,233 @@
-/*
-Handle assigning all pins to vga dac
-does not handle drawing - this will be one in another module
-*/
+module	VGA_Controller(	//	Host Side
+						iCursor_RGB_EN,
+						iCursor_X,
+						iCursor_Y,
+						iCursor_R,
+						iCursor_G,
+						iCursor_B,
+						iRed,
+						iGreen,
+						iBlue,
+						oAddress,
+						oCoord_X,
+						oCoord_Y,
+						//	VGA Side
+						oVGA_R,
+						oVGA_G,
+						oVGA_B,
+						oVGA_H_SYNC,
+						oVGA_V_SYNC,
+						oVGA_SYNC,
+						oVGA_BLANK,
+						oVGA_CLOCK,
+						//	Control Signal
+						iCLK,
+						iRST_N	);
+
+// `include "VGA_Param.h"
+
+//	Host Side
+output	reg	[19:0]	oAddress;
+output	reg	[9:0]	oCoord_X;
+output	reg	[9:0]	oCoord_Y;
+input		[3:0]	iCursor_RGB_EN;
+input		[9:0]	iCursor_X;
+input		[9:0]	iCursor_Y;
+input		[9:0]	iCursor_R;
+input		[9:0]	iCursor_G;
+input		[9:0]	iCursor_B;
+input		[9:0]	iRed;
+input		[9:0]	iGreen;
+input		[9:0]	iBlue;
+//	VGA Side
+output		[9:0]	oVGA_R;
+output		[9:0]	oVGA_G;
+output		[9:0]	oVGA_B;
+output	reg			oVGA_H_SYNC;
+output	reg			oVGA_V_SYNC;
+output				oVGA_SYNC;
+output				oVGA_BLANK;
+output				oVGA_CLOCK;
+//	Control Signal
+input				iCLK;
+input				iRST_N;
+
+//	Internal Registers and Wires
+reg		[9:0]		H_Cont;
+reg		[9:0]		V_Cont;
+reg		[9:0]		Cur_Color_R;
+reg		[9:0]		Cur_Color_G;
+reg		[9:0]		Cur_Color_B;
+wire				mCursor_EN;
+wire				mRed_EN;
+wire				mGreen_EN;
+wire				mBlue_EN;
+
+reg		[9:0]		R_R;
+reg		[9:0]		G_G;
+reg		[9:0]		B_B;
+
+assign	oVGA_BLANK	=	oVGA_H_SYNC & oVGA_V_SYNC;
+assign	oVGA_SYNC	=	1'b0;
+assign	oVGA_CLOCK	=	iCLK;
+assign	mCursor_EN	=	iCursor_RGB_EN[3];
+assign	mRed_EN		=	iCursor_RGB_EN[2];
+assign	mGreen_EN	=	iCursor_RGB_EN[1];
+assign	mBlue_EN	=	iCursor_RGB_EN[0];
+
+assign	oVGA_R	=	R_R;
+
+assign	oVGA_G	=	G_G;
+
+assign	oVGA_B	=	B_B;
 
 
-module VGA_Controller (
-    // inputs to controller
-    input [9:0] iRed,
-    input [9:0] iGreen,
-    input [9:0] iBlue, // these will be set by the drawing module
-    
-    // input from fpga (passed thru by drawing module)
-    input iCLK, // 50mhz clock, passed thru from drawing module
-    input iRST, // passed thru to from drawing module
-
-    // controller outputs host side
-    // output oPIX_POS_UPDATE, // see vga clock
-    output reg [9:0] oCurrent_X, 
-    output reg [9:0] oCurrent_Y,
-
-    // outputs to VGA DAC ADV7123
-    output [9:0] oVGA_R,
-    output [9:0] oVGA_G,
-    output [9:0] oVGA_B,
-    output reg oVGA_H_SYNC, // set by sync
-    output reg oVGA_V_SYNC, // set by sync
-    output oVGA_SYNC, // blank bit unused
-    output reg oVGA_BLANK, // set by sync
-    output oVGA_CLOCK // set by sync
-);
-    
-
-// horizontal params    
-parameter H_DISPLAY = 639;
-parameter H_BACK = 48; // H_LEFT BORDER
-parameter H_FRONT = 16; // H_RIGHT BORDER
-parameter H_SYNC = 96; // H_SYNC
-parameter H_SYNC_START = H_DISPLAY + H_FRONT;
-parameter H_SYNC_END = H_DISPLAY + H_FRONT + H_SYNC;
-parameter TOTAL_PIX_IN_LINE = 799;
-
-// vertical params
-parameter V_DISPLAY = 479;
-parameter V_BACK = 33; // V TOP
-parameter V_FRONT = 10; // V BOT
-parameter V_SYNC = 2;
-parameter V_SYNC_START = V_DISPLAY + V_FRONT;
-parameter V_SYNC_END = V_DISPLAY + V_FRONT + V_SYNC;
-parameter TOTAL_LINES = 524;
-
-// set passthru & const params
-assign oVGA_R =	iRed;
-assign oVGA_G =	iGreen;
-assign oVGA_B =	iBlue;
-assign oVGA_SYNC = 1'b1; // unused pin
+//	Horizontal Parameter	( Pixel )
+parameter	H_SYNC_CYC	=	96;
+parameter	H_SYNC_BACK	=	45+3;
+parameter	H_SYNC_ACT	=	640;	//	646
+parameter	H_SYNC_FRONT=	13+3;
+parameter	H_SYNC_TOTAL=	800;
+//	Virtical Parameter		( Line )
+parameter	V_SYNC_CYC	=	2;
+parameter	V_SYNC_BACK	=	30+2;
+parameter	V_SYNC_ACT	=	480;	//	484
+parameter	V_SYNC_FRONT=	9+2;
+parameter	V_SYNC_TOTAL=	525;
+//	Start Offset
+parameter	X_START		=	H_SYNC_CYC+H_SYNC_BACK+4;
+parameter	Y_START		=	V_SYNC_CYC+V_SYNC_BACK;
 
 
-// Mod 2 clock for VGA pixel clock of 25 MHz
-reg pixel_reg;
-wire pixel_next;
-
-always @(posedge iCLK, posedge iRST) begin
-    if (iRST) begin
-        pixel_reg <= 1;
-    end else begin
-        pixel_reg <= pixel_next;
-    end
+//	Pixel LUT Address Generator
+always@(posedge iCLK or negedge iRST_N)
+begin
+	if(!iRST_N)
+	begin
+		oCoord_X	<=	0;
+		oCoord_Y	<=	0;
+		oAddress	<=	0;
+	end
+	else
+	begin
+		if(	H_Cont>=X_START && H_Cont<X_START+H_SYNC_ACT &&
+			V_Cont>=Y_START && V_Cont<Y_START+V_SYNC_ACT )
+		begin
+			oCoord_X	<=	H_Cont-X_START;
+			oCoord_Y	<=	V_Cont-Y_START;
+			oAddress	<=	oCoord_Y*H_SYNC_ACT+oCoord_X-3;
+		end
+	end
 end
 
-assign pixel_next = ~pixel_reg;
-assign oVGA_CLOCK = (pixel_reg === 0);
-
-always @(*) begin
-
-// set hsync & vsync
-oVGA_H_SYNC = ~((oCurrent_X >= H_SYNC_START) && (oCurrent_X < H_SYNC_END)); // negative polarity: https://electronics.stackexchange.com/questions/522053/what-does-it-mean-positive-or-negative-polarity-in-vgas-hsynch-and-vsynch
-
-oVGA_V_SYNC = ~((oCurrent_Y >= V_SYNC_START) && (oCurrent_Y < V_SYNC_END)); // neg polarity
-
-oVGA_BLANK = (oCurrent_X <= H_DISPLAY) && (oCurrent_Y <= V_DISPLAY); // see ADV7123 datasheet pg 9: while blank is logic 0, RGB inputs are ignored
+//	Cursor Generator	
+always@(posedge iCLK or negedge iRST_N)
+begin
+	if(!iRST_N)
+	begin
+		Cur_Color_R	<=	0;
+		Cur_Color_G	<=	0;
+		Cur_Color_B	<=	0;
+	end
+	else
+	begin
+		if(	H_Cont>=X_START+8 && H_Cont<X_START+H_SYNC_ACT+8 &&
+			V_Cont>=Y_START && V_Cont<Y_START+V_SYNC_ACT )
+		begin
+			if( (	(H_Cont==X_START + 8 + iCursor_X) 	||
+					(H_Cont==X_START + 8 + iCursor_X+1) ||
+					(H_Cont==X_START + 8 + iCursor_X-1) ||
+			 		(V_Cont==Y_START + iCursor_Y)	||
+					(V_Cont==Y_START + iCursor_Y+1)	||
+					(V_Cont==Y_START + iCursor_Y-1)	)
+					&& mCursor_EN )
+			begin
+				Cur_Color_R	<=	iCursor_R;
+				Cur_Color_G	<=	iCursor_G;
+				Cur_Color_B	<=	iCursor_B;
+			end
+			else
+			begin
+				Cur_Color_R	<=	iRed;
+				Cur_Color_G	<=	iGreen;
+				Cur_Color_B	<=	iBlue;
+			end			
+		end
+		else
+		begin
+			Cur_Color_R	<=	iRed;
+			Cur_Color_G	<=	iGreen;
+			Cur_Color_B	<=	iBlue;
+		end
+	end
 end
 
-// calculate x & y position
-always @(posedge oVGA_CLOCK, posedge iRST) begin
-    if (iRST) begin // last assignment wins in verilog
-        oCurrent_X <= 0;
-        oCurrent_Y <= 0;
-        // pixel_reg <= 0;
-    end else if (oCurrent_X == TOTAL_PIX_IN_LINE) begin // last pixel on line
-        oCurrent_X <= 0;
-        oCurrent_Y <= (oCurrent_Y <= TOTAL_LINES) ? oCurrent_Y + 1 : 0; // if current y <= # of lines, then y + 1 (since total lines is 1 less than actual total lines), else y = 0
-    end else begin
-        oCurrent_X <= oCurrent_X + 1; // advance by 1 pix
-    end
+//	H_Sync Generator, Ref. 25.175 MHz Clock
+always@(posedge iCLK or negedge iRST_N)
+begin
+	if(!iRST_N)
+	begin
+		H_Cont		<=	0;
+		oVGA_H_SYNC	<=	0;
+	end
+	else
+	begin
+		//	H_Sync Counter
+		if( H_Cont < H_SYNC_TOTAL )
+		H_Cont	<=	H_Cont+1;
+		else
+		H_Cont	<=	0;
+		//	H_Sync Generator
+		if( H_Cont < H_SYNC_CYC )
+		oVGA_H_SYNC	<=	0;
+		else
+		oVGA_H_SYNC	<=	1;
+	end
 end
+
+//	V_Sync Generator, Ref. H_Sync
+always@(posedge iCLK or negedge iRST_N)
+begin
+	if(!iRST_N)
+	begin
+		V_Cont		<=	0;
+		oVGA_V_SYNC	<=	0;
+	end
+	else
+	begin
+		//	When H_Sync Re-start
+		if(H_Cont==0)
+		begin
+			//	V_Sync Counter
+			if( V_Cont < V_SYNC_TOTAL )
+			V_Cont	<=	V_Cont+1;
+			else
+			V_Cont	<=	0;
+			//	V_Sync Generator
+			if(	V_Cont < V_SYNC_CYC )
+			oVGA_V_SYNC	<=	0;
+			else
+			oVGA_V_SYNC	<=	1;
+		end
+	end
+end
+
+
+
+always@(posedge iCLK)
+begin
+	R_R	=	(	H_Cont>=X_START+9 	&& H_Cont<X_START+H_SYNC_ACT+9 &&						
+				V_Cont>=Y_START 	&& V_Cont<Y_START+V_SYNC_ACT )
+				?	(mRed_EN	?	Cur_Color_R	:	0)	:	0;
+	G_G	=	(	H_Cont>=X_START+9 	&& H_Cont<X_START+H_SYNC_ACT+9 &&						
+				V_Cont>=Y_START 	&& V_Cont<Y_START+V_SYNC_ACT )
+				?	(mGreen_EN	?	Cur_Color_G	:	0)	:	0;
+	B_B	=	(	H_Cont>=X_START+9 	&& H_Cont<X_START+H_SYNC_ACT+9 &&						
+				V_Cont>=Y_START 	&& V_Cont<Y_START+V_SYNC_ACT )
+				?	(mBlue_EN	?	Cur_Color_B	:	0)	:	0;
+end
+
+
+
 
 endmodule

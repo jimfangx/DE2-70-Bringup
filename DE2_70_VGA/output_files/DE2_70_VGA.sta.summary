@@ -2,52 +2,84 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'VGA_Controller:controller|pixel_reg'
-Slack : -1.589
-TNS   : -23.795
+Type  : Slow Model Setup 'iCLK_50'
+Slack : -2.576
+TNS   : -49.605
 
-Type  : Slow Model Setup 'iCLK'
-Slack : 2.238
+Type  : Slow Model Setup 'clock_25:vga_clock|pixel_reg'
+Slack : -1.692
+TNS   : -33.361
+
+Type  : Slow Model Hold 'iCLK_50'
+Slack : -2.727
+TNS   : -2.727
+
+Type  : Slow Model Hold 'clock_25:vga_clock|pixel_reg'
+Slack : 0.391
 TNS   : 0.000
 
-Type  : Slow Model Hold 'iCLK'
-Slack : -1.968
-TNS   : -1.968
+Type  : Slow Model Recovery 'clock_25:vga_clock|pixel_reg'
+Slack : -0.296
+TNS   : -3.948
 
-Type  : Slow Model Hold 'VGA_Controller:controller|pixel_reg'
-Slack : 0.534
+Type  : Slow Model Recovery 'iCLK_50'
+Slack : -0.269
+TNS   : -0.269
+
+Type  : Slow Model Removal 'clock_25:vga_clock|pixel_reg'
+Slack : 0.819
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'iCLK'
+Type  : Slow Model Removal 'iCLK_50'
+Slack : 1.039
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'iCLK_50'
 Slack : -1.380
-TNS   : -2.380
+TNS   : -23.380
 
-Type  : Slow Model Minimum Pulse Width 'VGA_Controller:controller|pixel_reg'
+Type  : Slow Model Minimum Pulse Width 'clock_25:vga_clock|pixel_reg'
 Slack : -0.500
-TNS   : -20.000
+TNS   : -24.000
 
-Type  : Fast Model Setup 'VGA_Controller:controller|pixel_reg'
-Slack : -0.273
-TNS   : -3.018
+Type  : Fast Model Setup 'iCLK_50'
+Slack : -0.700
+TNS   : -12.503
 
-Type  : Fast Model Setup 'iCLK'
-Slack : 1.437
+Type  : Fast Model Setup 'clock_25:vga_clock|pixel_reg'
+Slack : -0.324
+TNS   : -4.541
+
+Type  : Fast Model Hold 'iCLK_50'
+Slack : -1.713
+TNS   : -1.713
+
+Type  : Fast Model Hold 'clock_25:vga_clock|pixel_reg'
+Slack : 0.215
 TNS   : 0.000
 
-Type  : Fast Model Hold 'iCLK'
-Slack : -1.057
-TNS   : -1.057
-
-Type  : Fast Model Hold 'VGA_Controller:controller|pixel_reg'
-Slack : 0.245
+Type  : Fast Model Recovery 'clock_25:vga_clock|pixel_reg'
+Slack : 0.223
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'iCLK'
+Type  : Fast Model Recovery 'iCLK_50'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Fast Model Removal 'clock_25:vga_clock|pixel_reg'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Fast Model Removal 'iCLK_50'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'iCLK_50'
 Slack : -1.380
-TNS   : -2.380
+TNS   : -23.380
 
-Type  : Fast Model Minimum Pulse Width 'VGA_Controller:controller|pixel_reg'
+Type  : Fast Model Minimum Pulse Width 'clock_25:vga_clock|pixel_reg'
 Slack : -0.500
-TNS   : -20.000
+TNS   : -24.000
 
 ------------------------------------------------------------

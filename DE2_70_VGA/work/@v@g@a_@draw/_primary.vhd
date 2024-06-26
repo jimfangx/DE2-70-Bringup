@@ -8,8 +8,8 @@ entity VGA_Draw is
         oVGA_B          : out    vl_logic_vector(9 downto 0);
         oVGA_HS         : out    vl_logic;
         oVGA_VS         : out    vl_logic;
-        oVGA_SYNC_N     : out    vl_logic;
-        oVGA_BLANK_N    : out    vl_logic;
+        oVGA_SYNC       : out    vl_logic;
+        oVGA_BLANK      : out    vl_logic;
         oVGA_CLOCK      : out    vl_logic
     );
 end VGA_Draw;

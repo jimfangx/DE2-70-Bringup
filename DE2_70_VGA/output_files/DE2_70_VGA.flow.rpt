@@ -1,5 +1,5 @@
 Flow report for DE2_70_VGA
-Tue Jun 18 01:37:44 2024
+Sat Jun 22 00:10:27 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 18 01:37:44 2024            ;
+; Flow Status                        ; Successful - Sat Jun 22 00:10:27 2024            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; DE2_70_VGA                                       ;
 ; Top-level Entity Name              ; VGA_Draw                                         ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C70F896C6                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 51 / 68,416 ( < 1 % )                            ;
-;     Total combinational functions  ; 51 / 68,416 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 21 / 68,416 ( < 1 % )                            ;
-; Total registers                    ; 21                                               ;
+; Total logic elements               ; 71 / 68,416 ( < 1 % )                            ;
+;     Total combinational functions  ; 71 / 68,416 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 46 / 68,416 ( < 1 % )                            ;
+; Total registers                    ; 46                                               ;
 ; Total pins                         ; 36 / 622 ( 6 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0 / 1,152,000 ( 0 % )                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/18/2024 01:37:28 ;
+; Start date & time ; 06/22/2024 00:10:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_70_VGA          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 30902517252148.171869984842104        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 30902517252148.171904021127436        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -95,12 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4591 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 5070 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4573 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4563 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4527 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4595 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 5070 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4573 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4562 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4527 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

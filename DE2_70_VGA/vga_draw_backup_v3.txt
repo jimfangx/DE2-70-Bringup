@@ -1,0 +1,73 @@
+module VGA_Draw (
+    iCLK_50.
+    oVGA_CLOCK, 
+oVGA_HS,	
+oVGA_VS,
+oVGA_BLANK_N,
+oVGA_SYNC_N,
+oVGA_R,   	
+oVGA_G,	 	
+oVGA_B,
+);
+input			iCLK_50;	
+
+wire		DLY_RST;
+
+wire		VGA_CTRL_CLK;
+wire [9:0]	mVGA_R;
+wire [9:0]	mVGA_G;
+wire [9:0]	mVGA_B;
+wire [19:0]	mVGA_ADDR;
+
+////////////////////////	VGA			////////////////////////////
+output			oVGA_CLOCK;   			//	VGA Clock
+output			oVGA_HS;					//	VGA H_SYNC
+output			oVGA_VS;					//	VGA V_SYNC
+output			oVGA_BLANK_N;			//	VGA BLANK
+output			oVGA_SYNC_N;			//	VGA SYNC
+output	[9:0]	oVGA_R;   				//	VGA Red[9:0]
+output	[9:0]	oVGA_G;	 				//	VGA Green[9:0]
+output	[9:0]	oVGA_B;   				//	VGA Blue[9:0]
+
+
+    //	Reset Delay Timer
+Reset_Delay			r0	(	.iCLK(iCLK_50),.oRESET(DLY_RST)	);
+
+VGA_Audio_PLL 		p1	(	.areset(~DLY_RST),.inclk0(iTD1_CLK27),.c0(VGA_CTRL_CLK),.c1(AUD_CTRL_CLK),.c2(VGA_CLK)	);
+
+//	VGA Controller
+VGA_Controller		u1	(	//	Host Side
+							.iCursor_RGB_EN(4'h7),
+							.oAddress(mVGA_ADDR),
+							.iRed(mVGA_R),
+							.iGreen(mVGA_G),
+							.iBlue(mVGA_B),
+							//	VGA Side
+							.oVGA_R(oVGA_R),
+							.oVGA_G(oVGA_G),
+							.oVGA_B(oVGA_B),
+							.oVGA_H_SYNC(oVGA_HS),
+							.oVGA_V_SYNC(oVGA_VS),
+							.oVGA_SYNC(oVGA_SYNC_N),
+							.oVGA_BLANK(oVGA_BLANK_N),
+							.oVGA_CLOCK(oVGA_CLOCK),
+							//	Control Signal
+							.iCLK(VGA_CTRL_CLK),
+							.iRST_N(DLY_RST)	);
+
+VGA_OSD_RAM			u2	(	//	Read Out Side
+							.oRed(mVGA_R),
+							.oGreen(mVGA_G),
+							.oBlue(mVGA_B),
+							.iVGA_ADDR(mVGA_ADDR),
+							.iVGA_CLK(VGA_CLK),
+							//	CLUT
+							.iON_R(1023),
+							.iON_G(1023),
+							.iON_B(1023),
+							.iOFF_R(0),
+							.iOFF_G(0),
+							.iOFF_B(512),
+							//	Control Signals
+							.iRST_N(DLY_RST)	);
+endmodule

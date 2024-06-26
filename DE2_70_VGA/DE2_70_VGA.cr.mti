@@ -5,19 +5,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	tb_VGA
 
-} {} {}} D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v {1 {vlog -work work D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v
+} {} {}} D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v {1 {vlog -work work D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module VGA_Draw
+-- Compiling module tb_VGA_Controller
 
 Top level modules:
-	VGA_Draw
-
-} {} {}} D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v {1 {vlog -work work D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module VGA_Controller
-
-Top level modules:
-	VGA_Controller
+	tb_VGA_Controller
 
 } {} {}} D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v {1 {vlog -work work D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -25,12 +18,5 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	tb_reset_delay
-
-} {} {}} D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v {1 {vlog -work work D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module tb_VGA_Controller
-
-Top level modules:
-	tb_VGA_Controller
 
 } {} {}}

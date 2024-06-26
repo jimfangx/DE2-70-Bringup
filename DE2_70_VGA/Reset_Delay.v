@@ -1,18 +1,17 @@
 module	Reset_Delay(iCLK,oRESET);
 input		iCLK;
 output reg	oRESET;
-reg	[3:0]	Cont;
+reg	[19:0]	Cont;
 
-always @(posedge iCLK) begin
-	if (Cont === 4'bxxxx) begin
-        Cont <= 1;
-        oRESET <= 1'b1;
-    end else if (Cont<=4'h1) begin
+always@(posedge iCLK)
+begin
+	if(Cont!=20'hFFFFF)
+	begin
 		Cont	<=	Cont+1;
-		oRESET	<=	1'b1;
-    end else begin
-	    oRESET	<=	1'b0;
-    end
+		oRESET	<=	1'b0;
+	end
+	else
+	oRESET	<=	1'b1;
 end
 
 endmodule

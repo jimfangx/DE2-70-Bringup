@@ -200,11 +200,11 @@ GND*                         : AD11      :        :                   :         
 GND*                         : AD12      :        :                   :         : 8         :                
 GND*                         : AD13      :        :                   :         : 8         :                
 GND*                         : AD14      :        :                   :         : 8         :                
-iCLK                         : AD15      : input  : 3.3-V LVTTL       :         : 7         : Y              
+iCLK_50                      : AD15      : input  : 3.3-V LVTTL       :         : 7         : Y              
 GND*                         : AD16      :        :                   :         : 7         :                
 GND*                         : AD17      :        :                   :         : 7         :                
 GND*                         : AD18      :        :                   :         : 7         :                
-GND*                         : AD19      :        :                   :         : 7         :                
+oVGA_SYNC_N                  : AD19      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AD20      :        :                   :         : 7         :                
 GND*                         : AD21      :        :                   :         : 7         :                
 GND*                         : AD22      :        :                   :         : 7         :                
@@ -408,7 +408,7 @@ oVGA_G[1]                    : B11       : output : 3.3-V LVTTL       :         
 oVGA_G[4]                    : B12       : output : 3.3-V LVTTL       :         : 3         : Y              
 oVGA_G[7]                    : B13       : output : 3.3-V LVTTL       :         : 3         : Y              
 oVGA_G[8]                    : B14       : output : 3.3-V LVTTL       :         : 3         : Y              
-oVGA_SYNC_N                  : B15       : output : 3.3-V LVTTL       :         : 3         : Y              
+GND*                         : B15       :        :                   :         : 3         :                
 oVGA_B[0]                    : B16       : output : 3.3-V LVTTL       :         : 4         : Y              
 oVGA_B[3]                    : B17       : output : 3.3-V LVTTL       :         : 4         : Y              
 oVGA_B[5]                    : B18       : output : 3.3-V LVTTL       :         : 4         : Y              
@@ -438,7 +438,7 @@ VCCIO3                       : C11       : power  :                   : 3.3V    
 oVGA_G[3]                    : C12       : output : 3.3-V LVTTL       :         : 3         : Y              
 oVGA_G[6]                    : C13       : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : C14       :        :                   :         : 3         :                
-oVGA_BLANK_N                 : C15       : output : 3.3-V LVTTL       :         : 3         : Y              
+GND*                         : C15       :        :                   :         : 3         :                
 oVGA_B[1]                    : C16       : output : 3.3-V LVTTL       :         : 4         : Y              
 GND*                         : C17       :        :                   :         : 4         :                
 oVGA_B[4]                    : C18       : output : 3.3-V LVTTL       :         : 4         : Y              
@@ -531,7 +531,7 @@ GND                          : F14       : gnd    :                   :         
 VCCIO3                       : F15       : power  :                   : 3.3V    : 3         :                
 GND*                         : F16       :        :                   :         : 4         :                
 GND                          : F17       : gnd    :                   :         :           :                
-GND*                         : F18       :        :                   :         : 4         :                
+oVGA_BLANK_N                 : F18       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : F19       :        :                   :         : 4         :                
 oVGA_R[7]                    : F20       : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : F21       : power  :                   : 3.3V    : 4         :                

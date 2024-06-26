@@ -4,121 +4,121 @@ K3
 cModel Technology
 Z0 dD:\Projects\DE2-70-Bringup\DE2_70_Basic_Tests
 vReset_Delay
-!i10b 1
-!s100 14=YPQ<@?Q0jkOBg9Dj1T2
-If:Q]MfjZB??=El0_FkaeA0
-Z1 VDoL>1[=KXh_Qfl<A4]Nfm0
-Z2 dD:\Projects\DE2-70-Bringup\DE2_70_VGA
-w1718698038
-Z3 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v
-Z4 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v
+Z1 I_D693=S9dAOlLmFHHY;T;2
+Z2 VDoL>1[=KXh_Qfl<A4]Nfm0
+Z3 dD:\Projects\DE2-70-Bringup\DE2_70_VGA
+Z4 w1719023527
+Z5 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v
+Z6 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v
 L0 1
-Z5 OV;L;10.1d;51
-r1
-!s85 0
-31
-!s108 1718698044.984000
-!s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v|
-Z6 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v|
-!s101 -O0
-Z7 o-work work -O0
-Z8 n@reset_@delay
-vtb_reset_delay
-Z9 !s100 MfAJkITfEm:9@lH]?n`:]0
-Z10 Ii<NlBJ[jZLYQ0hb6zaCPa3
-Z11 Vg26miMeSbQ0eNNnXaXkKm3
-R2
-Z12 w1718695709
-Z13 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v
-Z14 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v
-L0 2
-R5
+Z7 OV;L;10.1d;51
 r1
 31
-Z15 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v|
-R7
-Z16 !s108 1718697424.593000
-Z17 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v|
+Z8 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v|
+Z9 o-work work -O0
+Z10 n@reset_@delay
 !i10b 1
+Z11 !s100 b48Cd[:QL9;0I0UDe]@2n3
 !s85 0
+Z12 !s108 1719023853.326000
+Z13 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/Reset_Delay.v|
 !s101 -O0
-vtb_VGA
-Z18 !s100 AHhXgOdc1C?`]I]8P4V4K2
-Z19 IOIJX3U[;4JDGKB7HgA_i?0
-Z20 VZ9oEM[O@]BKdPV0WTM5h=2
-R2
-Z21 w1718695343
-Z22 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v
-Z23 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v
+vtb_reset_delay
+!i10b 1
+Z14 !s100 MfAJkITfEm:9@lH]?n`:]0
+Z15 Ii<NlBJ[jZLYQ0hb6zaCPa3
+Z16 Vg26miMeSbQ0eNNnXaXkKm3
+R3
+Z17 w1718695709
+Z18 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v
+Z19 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v
 L0 2
-R5
+R7
+r1
+!s85 0
+31
+!s108 1719023853.528000
+!s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v|
+Z20 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_reset_delay.v|
+!s101 -O0
+R9
+vtb_VGA
+Z21 !s100 AHhXgOdc1C?`]I]8P4V4K2
+Z22 IOIJX3U[;4JDGKB7HgA_i?0
+Z23 VZ9oEM[O@]BKdPV0WTM5h=2
+R3
+Z24 w1718695343
+Z25 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v
+Z26 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v
+L0 2
+R7
 r1
 31
-Z24 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v|
-R7
-Z25 ntb_@v@g@a
-Z26 !s108 1718697424.033000
-Z27 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v|
+Z27 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v|
+R9
+Z28 ntb_@v@g@a
+Z29 !s108 1719023853.071000
+Z30 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_VGA_Controller
-Z28 !s100 XUi3L^K_3PIOH>5fa_<XZ0
-Z29 IajF;h3=fg:WDY7DKc_0m:0
-Z30 V5eakoY6mNcQiiUeR@13hG0
-R2
-Z31 w1718695250
-Z32 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v
-Z33 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v
+Z31 !s100 XUi3L^K_3PIOH>5fa_<XZ0
+Z32 IajF;h3=fg:WDY7DKc_0m:0
+Z33 V5eakoY6mNcQiiUeR@13hG0
+R3
+Z34 w1718695250
+Z35 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v
+Z36 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v
 L0 3
-R5
+R7
 r1
 31
-Z34 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v|
-R7
-Z35 ntb_@v@g@a_@controller
-Z36 !s108 1718697424.192000
-Z37 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v|
+Z37 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v|
+R9
+Z38 ntb_@v@g@a_@controller
+Z39 !s108 1719023853.208000
+Z40 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/tb_VGA_Controller.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vVGA_Controller
-Z38 I:ZGeZYbBAb_083oZ;d;nG1
-Z39 VLLDOQVN>2FJ@hE0KlMHci1
-R2
-Z40 w1718697994
-Z41 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v
-Z42 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v
-L0 7
-R5
+Z41 !s100 G=o0QbJD]L^X8zVaG4I3>3
+Z42 I`Q162gWN9O8aB2m`M@DeB2
+Z43 VkdM^5_K:1DW^o7o12kBVg2
+R3
+Z44 w1719022826
+Z45 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v
+Z46 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v
+L0 1
+R7
 r1
 31
-Z43 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v|
-R7
-Z44 n@v@g@a_@controller
+Z47 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v|
+R9
+Z48 n@v@g@a_@controller
+Z49 !s108 1719023852.815000
+Z50 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v|
 !i10b 1
-Z45 !s100 ?G^[e77U:eUoWjiGG5S?33
 !s85 0
-Z46 !s108 1718698000.390000
-Z47 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Controller.v|
 !s101 -O0
 vVGA_Draw
-Z48 !s100 KdL]62KI5z<IMHYn;oD6[0
-Z49 I7aO8kAEEOhlG^bhVoI@X30
-Z50 Vb;9Q_XD1F0^Ej]nai6EH;3
-R2
-Z51 w1718695299
-Z52 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v
-Z53 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v
+Z51 Infj2ioh8P^HU:`0IoS4h<0
+Z52 Vlh?Pi2PaJnbhhAi=@cZzm3
+R3
+Z53 w1719023845
+Z54 8D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v
+Z55 FD:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v
 L0 5
-R5
+R7
 r1
 31
-Z54 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v|
-R7
-Z55 n@v@g@a_@draw
-Z56 !s108 1718697423.827000
-Z57 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v|
+Z56 !s90 -reportprogress|300|-work|work|D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v|
+R9
+Z57 n@v@g@a_@draw
+Z58 !s100 b6=fFWg@FEoP99b_DUcb_2
+Z59 !s108 1719023852.919000
+Z60 !s107 D:/Projects/DE2-70-Bringup/DE2_70_VGA/VGA_Draw.v|
 !i10b 1
 !s85 0
 !s101 -O0
